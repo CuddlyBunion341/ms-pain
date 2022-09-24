@@ -1,0 +1,19 @@
+{
+	"liveSassCompile.settings.compileOnWatch": true,
+	"liveSassCompile.settings.excludeList": [
+		"/**/node_modules/**",
+		"/.vscode/**"
+	],
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "compressed",
+			"extensionName": ".min.css",
+			"savePath": null,
+			"savePathReplacementPairs": null
+		}
+	],
+	"prettier.tabWidth": 4,
+	"prettier.arrowParens": "always",
+	"prettier.bracketSameLine": true,
+	"prettier.singleQuote": false
+}
