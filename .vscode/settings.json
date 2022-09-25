@@ -14,6 +14,11 @@
 	],
 	"prettier.tabWidth": 4,
 	"prettier.arrowParens": "always",
+	"prettier.trailingComma": "none",
+	"prettier.quoteProps": "as-needed",
 	"prettier.bracketSameLine": true,
-	"prettier.singleQuote": false
+	"prettier.singleQuote": false,
+	"prettier.useTabs": true,
+	"prettier.semi": true,
+	"editor.formatOnSave": true
 }
