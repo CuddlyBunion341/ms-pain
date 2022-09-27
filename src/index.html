@@ -6,11 +6,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="css/main.min.css" />
 		<title>Hello World</title>
+		<script src="./canvas.js" defer></script>
 	</head>
 	<body>
-		<h1>Hello World!</h1>
-		<img class="logo" src="../res/logo.svg" alt="Electron logo" />
-		<p>Welcome to Electron!</p>
-		<p>Its time to build an amazing application!</p>
+		<aside class="toolbar">
+			<button>A</button>
+			<button>B</button>
+			<button>C</button>
+			<button>D</button>
+		</aside>
+		<main class="canvas-container">
+			<canvas id="c"></canvas>
+		</main>
+		<aside class="details"></aside>
 	</body>
 </html>

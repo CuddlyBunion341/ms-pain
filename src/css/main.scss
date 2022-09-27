@@ -2,25 +2,58 @@
 	font-family: sans-serif;
 }
 body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.toolbar {
+	display: flex;
+	flex-direction: column;
+	float: left;
+	border-right: 1px solid black;
+	background-color: lightcoral;
+	width: max-content;
+	height: 100vh;
+	button {
+		width: 50px;
+		height: 50px;
+		&:active {
+			background-color: lightblue;
+		}
+	}
+}
+
+.canvas-container {
+	position: relative;
+	flex: 1;
+	// overflow: scroll;
+	// height: 100vh;
+	background-color: lightslategrey;
+	// padding: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-	height: 100vh;
-	margin: 0;
 }
-h1 {
-	display: flex;
-	align-items: center;
+canvas {
+	border: 1px solid black;
+	width: 200%;
+	height: 100%;
+	margin: 50px;
+	background-color: white;
+	box-shadow: 10px 0 0 0 black;
 }
-.logo {
-	width: 4rem;
-	height: 4rem;
-	margin-right: 5px;
-	animation-name: rotation;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+
+.details {
+	background-color: lightpink;
+	width: 200px;
+	padding: 10px;
 }
 
 @keyframes rotation {
